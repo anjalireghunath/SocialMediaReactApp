@@ -614,14 +614,20 @@ const ViewAllPost = () => {
         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div className="row g-3">
                {viewpost.map((value,key)=>{
-                   return <div className='col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4'>
-                   <div className="card">
-                <center>   <img style={{width:250,height:250}} src="https://cdn1.vectorstock.com/i/1000x1000/51/05/male-profile-avatar-with-brown-hair-vector-12055105.jpg" className="card-img-top" alt="..."/></center>
-                   <div className="card-body">
-                     <p className="card-text">Title:{value.title}</p>
-                     <p className="card-text">Body: {value.body}</p>
-                   </div>
-                 </div>
+                   return <div className='col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12'>
+                  <div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://www.w3schools.com/howto/img_avatar2.png" class="img-fluid rounded-start" alt="..."/>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Title:{value.title}</h5>
+        <p class="card-text">{value.body}</p>
+      </div>
+    </div>
+  </div>
+</div>
                  </div>
                })}
             </div>
